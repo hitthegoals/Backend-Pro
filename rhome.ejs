@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munch Restaurant</title>
+    <link rel="icon" href="rest5.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    body{
+       min-width:100vw;
+       min-height:100vh;
+       display: grid;
+       
+    }
+
+    .container{
+        overflow: hidden;
+       
+        background-image: url('bg3.jpeg');
+        background-position:center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+   
+    /* page1 */
+    .page1{
+    width:100vw;
+    height: 450px;
+    background-image: url('burger3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index:1;
+    }
+
+    .page1 h1{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    }
+    
+    .nav{
+    float: right;
+    margin-right: 18px;
+    margin-top: -22px;
+    }
+
+    .page1 a{
+    color: white;
+    text-decoration: none;
+    margin-left: 8px;
+    }
+
+    a:hover{
+    background-color: rgb(66, 66, 122);
+    padding: 3px;
+    border-radius: 3px;
+    }
+
+    .page1 h3{
+    font-family: Dancing Script;
+    font-weight:bolder;
+    color: white;
+    width: 200px;
+    position: relative;
+    left: 250px;
+    top: 50px;
+    }
+    
+    .h1{
+    width: 200px;
+    position: relative;
+    left: 250px;
+    top: 60px;
+    }
+
+    /* page2 */
+    .page2{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    z-index: 2;
+    bottom: 30px;  
+   }
+
+    .page2 img{
+     width: 50px;
+     height: 50px; 
+     margin-top: 5px;
+     border-radius: 5px;
+    }
+
+    .page2 .sec1{
+    background-color: rgb(164, 124, 167);
+    margin: 50px;
+    width: 200px;
+    height: 240px;
+    padding: 5px;
+    border: 1px;
+    box-shadow: 0 8px 8px 0 cadetblue;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    position: relative; 
+    top: -40px;
+    z-index: 2;
+    }
+
+    .page2 h5{
+        color: black;
+    }
+    .page2 p{
+        color: black;
+        line-height: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        font-size:small;
+        margin-top: -20px;
+    }
+
+    
+/* page3 */
+.page3{
+    display: flex;
+    position: relative;
+    left: 50px;
+    z-index: 1;
+   
+}
+
+.page3 img{
+    Margin-left: 30px;
+    width: 500px;
+    height: 400px; 
+   
+}
+
+.page3 .para{
+    background-color:rgb(158, 107, 159);
+    box-shadow: 0 8px 12px 0 cadetblue;
+    border-radius: 15px;
+    width: 400px;
+    height: 320px;
+    padding: 12px;
+    margin-left: 50px;
+    position: relative;
+    left: -80px;
+    top: 15px;
+    line-height: 20px;
+}
+
+.page3 h4{
+    font-family: Dancing Script;
+}
+.page3 p{
+    margin-top: -12px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+    line-height: 12px;
+    
+
+    
+}
+
+.page3,.head{
+    text-align: center;
+}
+
+        /* page4 */
+        .page4 .head h2{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .page4{
+            margin-top: 50px;
+            text-align: center;
+            line-height: 50px;
+            
+        }
+        .body .img1{
+            float: left;
+            width: 50px;
+            height: 50px;
+            border: 1px solid grey;
+            border: none;
+            border-end-start-radius: 5px;
+            border-top-left-radius: 5px;
+            
+          }
+         
+        .body .img5{
+            float: left;
+            width: 50px;
+            height: 50px;
+            border: 1px solid grey;
+            border:none;
+            border-bottom-right-radius:5px;
+            border-top-right-radius:5px;
+        }
+
+        .body .img2, .img3, .img4{
+            float: left;
+            width: 50px;
+            height: 50px;
+            border: 1px solid grey;
+            border: none;
+        
+        }
+
+        .body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+        } 
+        
+        .body img {
+         transition: transform 0.2s ease-in-out;
+         box-shadow: 0 6px 5px 0 grey;   
+         
+        }
+
+        .body img:hover{
+         transform: scale(1.1);
+        
+        }
+
+    /* page5 */
+
+        .page5{
+        margin-top: 90px;
+        display: flex;
+        position: relative;
+        left: 50px;
+        z-index: 1;
+        }
+
+        .page5 img{
+        Margin-left: 30px;
+        width: 500px;
+        height: 400px;    
+        }
+
+        .page5 .meal{
+        background-color:rgb(158, 107, 159);
+        box-shadow: 0 8px 12px 0 cadetblue;
+        border-radius: 15px;
+        width: 520px;
+        height: 350px;
+        padding: 12px;
+        margin-left: 50px;
+        position: relative;
+        left: -150px;
+        top: 15px;
+        line-height: 14px;
+        }
+
+
+        .page5 h4,p{
+        font-family: Dancing Script;
+        }
+        
+        .page5 h4{
+            font-size: larger;
+        }
+        .page5 h4, h2{
+        text-align: center;
+        line-height: 25px;
+        }
+
+        
+        .meal h5{
+        margin-left: 20px;
+        
+        
+        
+        }
+
+        .meal p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: black;
+        line-height: normal;
+        margin-top: -30px;
+        color: white;
+        font-style: italic;
+        margin-left:50px;
+        
+        }
+
+        
+      /* page6 */
+
+      .page6{
+        margin-bottom: 60px;
+      }
+        .page6 img{
+            margin-right: 30px;
+            width: 540px;
+            height: 450px;
+            display: flex;
+            flex-direction: row;
+            float: right;
+            position: relative;
+            z-index: 1;
+            bottom: 160px;
+
+            
+        }
+
+        .page6 .dinner{
+        background-color:rgb(158, 107, 159);
+        box-shadow: 0 8px 12px 0 cadetblue;
+        border-radius: 15px;
+        width: 500px;
+        height: 300px;
+        padding: 12px;
+        margin-left: 50px;
+        position: relative;
+        right: -20px;
+        top: 220px;
+        line-height: 14px;
+        z-index: 2;
+        }
+
+
+        .page6 h4,p{
+        font-family: Dancing Script;
+
+        }
+        .page6 .dinner p{
+        font-size: 11px;
+        margin-bottom: 5px;
+        }
+        .page6 h4{
+            font-size: larger;
+        }
+        .page6 h4, h2{
+        text-align: center;
+        line-height: 25px;
+        }
+
+   
+        .dinner h5{
+        margin-left: 30px;
+        }
+        .dinner p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: black;
+        line-height: normal;
+        margin-top: -30px;
+        color: white;
+        font-style: italic;
+        margin-left:50px;
+        }
+
+        /* page7 */   
+    
+        .bg7{
+            background-color: black;
+            width: 100%;
+            height: 320px;
+            margin-top: 300px;
+            }
+        
+       .page7 .bg7 p{
+            color: white;
+            padding-top: 90px;
+        }
+        .bg7 img{
+            width: 50%;
+            height: 250px;
+            float: right;
+            position: relative;
+            bottom: 200px;
+        } 
+         .page7{
+            background-color: black;
+            width: 100vw;
+            height: 320px;
+            position: relative;
+            z-index:1;
+        
+            
+         }
+
+         .bg7 img{
+            width: 450px;
+            height: 320px;
+            float: right;
+            position: relative;
+            z-index: 2;
+            bottom: 71px;
+            object-fit: cover;
+            
+
+         }
+
+         .bg7 p{
+            color: white;
+            float: left;
+            padding-top: 140px;
+            margin-left: 90px;
+        
+         }
+        /* page 8 */
+
+        .page8{
+            display:inline-block;
+        }
+
+         .page8 h2{
+            text-align: center;
+            margin-left: 200px;
+            
+         }
+         .page8 h4{
+            font-family: Dancing Script;
+            text-align: center;
+            margin-left: 200px;
+            font-size: larger;
+         }
+        
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            width: 700px;
+            object-fit: cover;
+            
+        }
+
+        .column{
+            flex:25%;
+            max-width: 25%;
+        }
+
+        .img-hover-zoom{
+            height: auto;
+            overflow: hidden;
+            border: 5px solid #ffffff;
+        }
+
+        .img-hover-zoom img{
+            vertical-align: middle;
+            margin:0;
+            padding:0;
+            border: 0;
+            transition: transform .5s ease;
+        }
+
+        .img-hover-zoom:hover img{
+            transform:scale(1.5);
+        }
+
+        .page8 button{
+            margin-top: 20px;
+            padding: 4px;
+            margin-left: 320px;
+            background-color: black;
+            color: white;
+
+        }
+
+        /* page9 */
+        .page9{
+        margin-left: 50px;
+        margin-top: 150px;
+        }
+
+        .page9 h2{
+        text-align:center;
+        margin-bottom: 30px;    
+         }
+        .page9 h4{
+        font-family: Dancing Script;
+        text-align: center;
+        
+        }
+        
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 170px;
+            object-fit: contain;
+           
+        }
+
+        .column{
+            flex:25%;
+            max-width: 25%;
+           
+        }
+
+        .img9{
+            border-radius: 20px;
+            position: relative;
+            height: auto;
+            overflow: hidden;
+            border: 5px solid #ffffff;
+           
+        }
+
+         .img9 img{
+            text-align: center;        
+            vertical-align: middle;
+            margin:0;
+            padding:0;
+            border: 0;
+            transition: transform .5s ease;
+    
+        }
+
+        .img9:hover img{
+            transform:scale(1.5);
+        }
+
+        .page9 audio{
+            width:100px;
+            height: 50px;
+            padding-bottom:0px;
+            margin-left: 45px;
+            
+        }
+        .page9 h6{
+            text-align: center;
+        }
+
+    /* page 10 */
+        .page10{
+            margin-top: 90px;
+            background-color: black;
+            width: 100%;
+            height: 250px;
+        }
+        .page10 .icon10{
+           display: flex;
+           justify-content: space-around;
+           padding-top: 50px;
+
+    }
+
+        .page10 .points{
+        color: white;
+        display: inline-block;
+        padding-top: 20px;
+        text-align: center;
+        flex-direction: row;
+        
+        }
+
+    
+    .page11{
+     padding-top: 20px;
+     text-align: center;
+     
+    }
+
+    .page11 h5{
+    font-family: Dancing Script;
+    font-size: larger;
+    }
+
+    .page11 .dine11{
+    margin-top: 20px;
+    width: 400px;
+    height: 550px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    }
+
+    .form11{
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    bottom: 500px;
+    left: 440px;
+
+    }
+    
+    .form11 ,input{
+    padding: 3px;
+    margin-bottom: 3px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    
+
+    }
+    .page11 .form11{
+    border: 1px solid grey;
+    border: none;
+    text-align: left;
+    margin-left: 20px;
+    padding: 20px;
+    width: 450px;
+    height: 420px;
+    background-color: rgb(162, 183, 214);
+    }
+
+    .form11 .box1, .box2{
+    display:inline-block;
+    }      
+    .form11 .box3, .box4{
+    display: inline-block;
+    }
+
+   .box5 input{
+    width: 410px;
+   }      
+
+   .box6 option{
+     padding: 3px;
+   }
+
+   .form11 button{
+    background-color: black;
+    color: white;
+    padding: 4px;
+    border-radius: 3px;
+    margin-left: 200px;
+    margin-top: 10px;
+
+   }
+    
+   /* page 12 */
+   .page12{
+        display: flex;
+        position: relative;
+        bottom: 300px;
+        min-width: 500vw;
+        margin-left: 25px;
+       
+      }
+ 
+    .container12{
+        margin-left:60px;
+        width: 200px;
+        background-color: white;
+        box-sizing: 0 0 5px rgba(0,0,0,0.5);
+    }
+    .container12 h6{
+        text-align: center;
+       
+    }
+    .container12 p{
+        text-align: justify;
+        margin-left: 15px;
+        width: 160px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size:small;
+        color: black;
+        line-height: 12px;
+        padding-top: 5px;
+        padding: 10px;
+    }
+
+    #check{
+        display: none;
+    }
+
+    .content{
+        display: none;
+    }
+
+    label{
+        display: inline-block;
+        
+        cursor: pointer;
+       
+        margin-left: 15px;
+        
+    }
+
+    
+
+    #check:checked ~ .content{
+        display: block;
+    }
+
+    #check:checked ~ label{
+        visibility: hidden;
+    }
+
+    #check:checked ~ label:after{
+        content: 'Show Less';
+        display: block;
+        visibility: visible;
+    }
+  /* page 13 */
+
+    .container13{
+        margin-left:10px;
+        width: 200px;
+        background-color: white;
+        box-sizing: 0 0 5px rgba(0,0,0,0.5);
+    }
+
+    .container13 h6{
+       text-align: center;
+    }
+    .container13 p{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size:small;
+        text-align: justify;
+        margin-left: 15px;
+        width: 160px;
+        color:black;
+        line-height: 12px;
+        padding-top: 5px;
+        padding: 10px;
+    }
+    #check1{
+        display: none;
+    }
+
+    .content1{
+        display: none;
+    }
+
+    label{
+        display: inline-block;
+    
+        cursor: pointer;
+    }
+
+    #check1:checked ~ .content1{
+        display: block;
+    }
+
+    #check1:checked ~ label{
+        visibility: hidden;
+    }
+
+    #check1:checked ~ label:after{
+        content: 'Show Less';
+        display: block;
+        visibility: visible;
+    }
+  
+/* page 14 */
+
+ 
+    .container14{
+        
+        margin-left:10px;
+        width: 200px;
+        background-color: white;
+        box-sizing: 0 0 5px rgba(0,0,0,0.5);
+    }
+
+    .container14 h6{
+     text-align: center;
+       
+    }
+    .container14 p{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size:small;
+        margin-left: 15px;
+        text-align: justify;
+        width: 160px;
+        color:black;
+        line-height: 12px;
+        padding-top: 5px;
+        padding: 10px;
+    }
+
+    #check2{
+        display: none;
+    }
+
+    .content2{
+        display: none;
+    }
+
+    label{
+        display: inline-block;
+        
+        cursor: pointer;
+    }
+
+    #check2:checked ~ .content2{
+        display: block;
+    }
+
+
+    #check2:checked ~ label{
+        visibility: hidden;
+    }
+
+    #check2:checked ~ label:after{
+        content: 'Show Less';
+        display: block;
+        visibility: visible;
+    }
+
+/* page 15 */
+ 
+    .container15{
+        margin-left: 10px;
+        width: 200px;
+        background-color: white;
+        box-sizing: 0 0 5px rgba(0,0,0,0.5);
+    }
+
+    .container15 h6{
+        text-align: center;
+    }
+    .container15 p{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size:small;
+        margin-left: 15px;
+        text-align: justify;
+        width: 160px;
+        color:black;
+        line-height: 12px;
+        padding-top: 5px;
+        padding: 10px;
+    }
+
+    #check3{
+        display: none;
+    }
+
+    .content3{
+        display: none;
+    }
+
+    label{
+        display: inline-block;
+      
+        cursor: pointer;
+    }
+
+    #check3:checked ~ .content3{
+        display: block;
+    }
+
+
+    #check3:checked ~ label{
+        visibility: hidden;
+    }
+
+    #check3:checked ~ label:after{
+        content: 'Show Less';
+        display: block;
+        visibility: visible;
+    }
+
+ /* page 16 */
+
+ .page16{
+     margin-left: 160px;
+     width: 650px;
+     height: 200px;
+     background-color:rgb(23, 19, 19);
+     position: relative;
+     bottom: 130px;
+     top: 40px;
+     z-index: 2;
+     box-shadow: 0 10px 10px 0 black;
+ }
+
+ .pg16 h2,p{
+    color: white;
+    margin-left:10px;
+    padding-top: 40px;
+    line-height: 0px;
+    text-align: left;
+ }
+
+ .pg16 h2, p{
+    line-height:2px;
+    font-size: larger;
+ }
+
+/* page 17 */
+    .page17{
+        background-color:rgb(23, 19, 19);
+        width: 100%;
+        height: 300px;
+        display: flex;
+        padding-top: 75px;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 120px;
+    }
+    .div1 h2{
+        font-size:large;
+        color: white;
+        text-align: left;
+        margin-left: 20px;
+        
+    }
+    
+    .div1 img{
+        padding-top: 10px;
+        margin-left: 20px;
+    }
+    .div1 p{
+        width: 200px;
+        color: white;
+        font-family:'Times New Roman', Times, serif;
+        line-height: 20px;
+        font-size: small;
+        text-align: justify;
+        margin-bottom: 8px;
+        padding-top: 14px;
+        
+
+    }
+    .div2{
+        margin-left: 50px;
+    }
+
+    .div1{
+        color: white;
+        font-size: small;
+        margin-left: 20px;
+    }
+
+    .div2 h4{
+        color: white;
+        margin-top: 2px;
+    }
+    .div2 ul li{
+        color: white;
+        margin-top: 35px;
+        font-size: small;
+
+    }
+    .div3 {
+        color: white;
+        font-size: small;
+        margin-left: 50px;
+
+    }
+    
+    .div3 h4{
+        margin-top: 2px;
+        font-size: 17px;
+    }
+    .div3 ul li{
+        line-height:50px ;
+
+    }
+    .div3 ul .tel{
+         margin-top: 20px;
+    }
+
+    .div3 ul address{
+        line-height: 30px;
+    }
+
+    .div4{
+        margin-left: 35px;
+    }
+    .div4 h4{
+        color: white;
+        margin-top: 2px;
+
+    }
+
+    .div4 img{
+        width: 70px;
+        height: 70px;
+        margin-top: 5px;
+    }
+
+    .div4 .inst1{
+        margin-top: 34px;
+    }
+
+ 
+</style>
+
+</head>
+<body>
+    <div class="container">
+    <!-- page1 -->
+    <div class="page1">
+        <h1>Munch Restaurant</h1>
+        <div class="nav">
+        <a href="/home">Home</a>
+        <a href="/about">About Us</a>
+        <a href="/menu">Menu</a>
+        <a href="/recipies">Recipies</a>
+        <a href="/chat">Chat</a>
+        <a href="/reservation">Reservation</a>
+        </div>
+        <h3>for happy day</h3>
+    <h1 class="h1">Enjoy Happy Meal</h1>
+</div>
+
+<!-- page2 -->
+<div class="page2">
+    <section class="sec1">
+        
+    <h5>Quality Foods</h5>
+    <img src="qfood1.png" alt="quality food">
+    <p>Food quality encompasses various attributes, including taste, freshness and presentation. Quality management in restaurants sees to it that all ingredients are always fresh, meals are well-prepared, customer service is top-notch, and your decor is alluring. 
+
+</p>
+    </section>
+
+    <section class="sec1">
+        <h5>Fastest Delivery</h5>
+        <img src="deli.png" alt="delivery person">
+        <p>Food comes in high-quality packaging that is leakproof, easy to open and maintains good food presentation during delivery. We will deliver your order promptly and punctually. This platform ensures that users can enjoy quick food delivery from the comfort of their homes.</p>
+    </section>
+
+    <section class="sec1">
+        <h5>Original Recipes</h5>
+        <img src="hfood.png" alt="recipes">
+        <p>A restaurant website's recipe page can showcase popular dishes, allowing customers to recreate their favorite meals at home. Recipes are easy to read and follow, with clear instructions and ingredient lists. Blog can feature recipes there, increasing content variety and SEO. </p>
+    </section>
+    <br> <br>
+</div>
+
+<!-- page3 -->
+<div class="page3">
+    <img src="chef1.avif" alt="Chef">
+
+    <div class="para">
+        <h4>Discover</h4>
+        <h2>OUR STORY</h2>
+        <p class="one">"Customer satisfaction is as important as their products and services."</p>
+        <p class="two">Authentic Find Dinning North & South Indian Restaurant. This is one of the Best Indian restaurant in Coimbatore region. Focuses on a modern Indian cuisine with ample options of South Indian specialties. </p>
+        <p class="three">Munch Restaurant in Coimbatore is a top player in the category North Indian Restaurants in the Coimbatore. Primarily features open air dine-in options with a variety of North Indian dishes and South India snacks  </p>
+        <h4>RoyMan</h4>
+    </div>
+</div>
+    <br>
+<!-- page4 -->
+<div class="page4">
+    <section class="head">
+    <h2>LET'S DISCOVER FOOD</h2>
+    <h1>SPECIAL DISHES TODAY</h1>
+    </section>
+
+    <section class="body">
+    
+    <a href="/indian"><img src="qfood1.png" alt="South/North Indian Food" class="img1"></a>
+    <a href="/chinese"><img src="b2.png" alt="Cooked Chinese Food" class="img2"></a>
+    <a href="/fastfood"><img src="b33.png" alt="Fast Food" class="img3"></a>
+    <a href="/desserts"><img src="b4.png" alt="Desserts" class="img4"></a>
+    <a href="/drinks"><img src="b5.png" alt="Cool Drinks" class="img5"></a>
+    </section>
+</div>
+<br><br>
+
+<!-- page 5 -->
+    <div class="page5">
+        <img src="page5.webp" alt="page5">
+        
+
+    <div class="meal">
+        <h4>Munch Restaurant</h4>
+        <h2>LUNCH SET Menu</h2>
+        <br>
+        
+        <h5>High Diet Meals--------------------------------------------------Rs.160/-</h5>
+        <p>Boiled rice,veg sambar,cabbage poriyal,bottle gourd koottu,appalam,rasam,curd,mango pickle,payasam,vada.</p>
+        <br>
+        <h5>Chicken Briyani-------------------------------------------------Rs.280/-</h5>
+        <p>Briyani with chicken leg-piece,chicken gravy,1 boiled egg,raita.</p>
+        <br>
+        <h5>Mutton Briyani--------------------------------------------------Rs.420/-</h5>
+        <p>Briyani with mutton pieces,mutton gravy,mutton fried balls,raita.</p>
+        <br>
+        <h5>Veg Pulao----------------------------------------------------------Rs.160/-</h5>
+        <p>Fried rice with variety of vegetables,flavoured masalas,sauce sashes.</p>
+    
+    </div>    
+    </div>
+<br><br>
+
+
+    <!-- page 6 -->
+     <div class="page6">
+        <div class="dinner">
+            <h4>Munch Restaurant</h4>
+            <h2>Dinner SET Menu</h2>
+            <br>
+            <h5>Naan---------------------------------------------------------Rs.80/-</h5>
+            <p>Hot Naan with delicious rich veg and non-veg curries.(additional charges for curries.)</p>
+            <h5>Idli-----------------------------------------------------------Rs.50/-</h5>
+            <p>Hot sambar, chutney and non-veg curries.(additional charges for curries.)</p>
+            <h5>Chappathi--------------------------------------------------Rs.70/-</h5>
+            <p>Delicious rich veg and non-veg curries.(additional charges for curries.)</p>
+            <h5>Dosa---------------------------------------------------------Rs.90/-</h5>
+            <p>Hot tastiest sambar and chutney.</p>
+            <h5>Poori---------------------------------------------------------Rs.80/-</h5>
+            <p>Hot tastiest potato masala and chutney.</p>
+             </div>
+             
+             <img src="dining1.jpg" alt="page6">
+     </div>
+<br>
+     <!-- page7 -->
+      <div class="page7">
+                <div class="bg7">
+                <p>"Good food ends with good talk." - Geoffrey Neighbor</p>
+                <img src="twofriends.jpg" alt="friends">
+                </div>
+      </div>
+
+      <br>
+
+      <!-- page8 -->
+       <div class="page8">
+        <h4>Discover Recipes From Restaurant</h4>
+       <h2>RECENT RECIPES</h2>
+
+        <div class="row">
+        <div class="column">
+            <div class="img-hover-zoom">
+            <img src="aappam.jpg" alt="" style="width: 200px; height: 100px;">
+            </div>
+
+            <div class="img-hover-zoom">
+            <img src="beijingduck.jpg" alt="" style="width: 200px; height: 100px;">
+            </div>
+            
+            <div class="img-hover-zoom">
+            <img src="burger.jpg" alt="" style="width: 200px; height: 200px;">
+            </div>
+
+            <div class="img-hover-zoom">
+            <img src="chappathi.webp" alt="" style="width: 200px; height: 100px;">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="img-hover-zoom">
+            <img src="cheesepizza.avif" alt="" style="width: 200px; height: 100px;">
+            </div>
+
+            <div class="img-hover-zoom">
+            <img src="chickenbriyani.jpg" alt="" style="width: 200px; height: 200px;">
+            </div>
+            
+            <div class="img-hover-zoom">
+            <img src="chinesesoup.jpg" alt="" style="width: 200px; height: 100px;">
+            </div>
+
+            <div class="img-hover-zoom">
+            <img src="chococake.avif" alt="" style="width: 200px; height: 100px;">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="img-hover-zoom">
+            <img src="doughnut.avif" alt="" style="width: 200px; height: 200px;">
+            </div>
+
+            <div class="img-hover-zoom">
+            <img src="noodles.avif" alt="" style="width: 200px; height: 200px;">
+            </div>
+            
+            <div class="img-hover-zoom">
+            <img src="onionrings.webp" alt="" style="width: 200px; height: 110px;">
+            </div>
+
+            
+        </div>
+
+        <div class="column">
+            <div class="img-hover-zoom">
+            <img src="oreodessert.avif" alt="" style="width: 200px; height: 100px;">
+            </div>
+
+            <div class="img-hover-zoom">
+            <img src="pasta.avif" alt="" style="width: 200px; height: 100px;">
+            </div>
+            
+            <div class="img-hover-zoom">
+            <img src="poori.jpeg" alt="" style="width: 200px; height: 100px;">
+            </div>
+
+            <div class="img-hover-zoom">
+            <img src="sandwich.avif" alt="" style="width: 200px; height: 200px;">
+            </div>
+        </div>
+
+        
+                <button type="btn">View all Recipes</button>
+        
+       </div>
+       </div>
+       <br>
+       <br>
+
+       <!-- page 9 -->
+        <div class="page9">
+        <h4>Discover Recipes From Restaurant</h4>
+        <h2>RECENT RECIPES</h2>
+
+        <div class="row">
+            <div class="column" style="background-color: #ffffff;">
+            <div class="img9">
+            <img src="chef21.avif" alt="" style="width:200px; height:150px;">
+            
+            <h6>Daniel Mark</h6>
+            <audio controls>
+                <source src="yummy.mp3" type="audio/mp3">
+            </audio>
+            </div>
+            </div>
+
+            <div class="column" style="background-color: #ffffff;">
+            <div class="img9">
+            <img src="chef22.jpg" alt="" style="width:200px; height:150px;">
+           
+            <h6>Anna Koshi</h6>
+            <audio controls>
+                <source src="yummy.mp3" type="audio/mp3">
+            </audio>
+            </div>
+            </div>
+
+            <div class="column" style="background-color: #ffffff;">
+            <div class="img9">
+            <img src="chef23.jpg" alt="" style="width:200px; height:150px;">
+            
+            <h6>Dave Harris</h6>
+            <audio controls>
+                <source src="yummy.mp3" type="audio/mp3">
+            </audio> 
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- page 10 -->
+         <div class="page10">
+
+        <div class="icon10">
+        <img src="trophy1.png" alt="" style="width: 50px; height: 50px;" >
+        <img src="people.png" alt="" style="width: 50px; height: 50px;" >
+        <img src="branch.png" alt="" style="width: 50px; height: 50px;" >
+        <img src="dish.jpg" alt="" style="width: 50px; height: 50px;" >
+        </div>
+
+        <div class="points" style="position: relative; left: 80px;">
+         <h4>328+</h4>
+         <h4>Award Wins</h4>
+        </div>
+        
+       
+        <div class="points" style="position: relative; left: 230px; ">
+        <h4>354+</h4>
+        <h4>Qualified Chefs</h4>
+        </div>
+
+        <div class="points" style="position: relative; left: 380px;">
+        <h4>548+</h4>
+        <h4>Branches </h4> 
+        </div>
+
+        <div class="points" style="position: relative; left: 530px;" >
+        <h4>6052+</h4>
+        <h4>Happy Customers</h4>
+        </div>
+        </div>
+
+        <br>
+
+        <!-- page 11 -->
+    <div class="page11">
+                <div class="header">
+                <h5>Submit Information To Place Order</h5>
+                <h2>Reserve A Table</h2>
+                </div>
+
+                <div class="dine11">
+                <img src="dine.avif" alt="">
+                </div>
+
+            <div class="form11">
+                <form action="">
+                    <div class="box1">
+                    <label for="name">Your Name</label><br>
+                    <input type="text" id="name">
+                    </div>
+                    <div class="box2">
+                    <label for="mail">Your Email</label><br>
+                    <input type="email" id="mail">
+                    </div>
+                    <br>
+
+                    <div class="box3">
+                    <label for="tel">Phone Number</label><br>
+                    <input type="number" id="tel">
+                    </div>
+                    <div class="box4">
+                    <label for="table">Table for</label><br>
+                    <input type="number" id="table">
+                    </div>
+                    <br>
+                
+                    <div class="box5">
+                    <label for="text">Occupation</label><br>
+                    <input type="text" id="occupation">
+                    </div>
+                    <br>
+
+                    <div class="box6">  
+                    <label for="time">Select Time</label>
+                    <input type="time" id="time"> 
+                    <select name="am/pm" id="am/pm">
+                        <option value="am">am</option>
+                        <option value="pm">pm</option>
+                    </select> <br>
+                 
+                    <label for="date">Select Date</label>
+                    <input type="date" id="date"> 
+                    <br>
+                    <textarea name="text" id="text" cols="60" rows="8">Any Message</textarea>
+                    <br> 
+                    <button type="submit">Reserve Now</button>
+                    </div>
+                </form>
+            </div>
+    </div>
+            <br>
+          
+<!-- page 12 -->
+            
+<div class="page12">
+    <div class="container12">
+            <input type="checkbox" id="check">
+             <img src="popcorn.jpg" alt="popcorn" style="width: 160px; height: 200px; margin-left: 15px; margin-top: 15px;">
+            <h6>12 March, 2025</h6>
+            <p>Spices like Kasuri methi, chaat masala, and black pepper. Yes, just these ingredients. Kasuri methi gives a nice aroma to the popcorn and chaat masala along with black pepper gives a tangy-spicy flavour to the snack.</p>
+           
+           <div class="content">
+           <p>Prep Time: 2 min | Cook Time: 5 min | Total Time: 7 min
+            
+            Serves: 4 people
+            
+            Ingredients:
+            1 cup popcorn kernels
+            1 tbsp butter
+            1 tbsp oil
+            1 tsp Kasuri methi
+            1 tbsp chaat masala
+            1 tsp black pepper powder</p>
+           </div>
+
+           <label for="check" style="color:blue; text-decoration: underline;">Read More...</label>
+    </div>
+
+
+    <div class="container13">
+        <input type="checkbox" id="check1">
+        <img src="noodles.avif" alt="noodles" style="width: 160px; height: 200px; margin-left: 15px; margin-top: 15px;">
+        <h6>12 March, 2025</h6>
+        <p>Cooking 2-minute veggie lover noodles is a speedy and simple interaction. Here is a bit by bit manual for assist you with setting them up quick:
+
+            Fixings:
+            
+            To know more: (check the bundling to guarantee they are veggie lover)</p>
+       
+       <div class="content1">
+       <p>1.Boil water in a kettle or microwave-safe container.
+
+        2.our the boiling water over the noodles in a heatproof bowl.
+        
+        3.Cover the bowl with a lid or plate to let the noodles steep for about 2 minutes.
+        
+        4.Drain any excess water and add the seasoning provided.
+        
+        5.Mix well and enjoy your quick 2-minute noodles!
+        
+        Now you enjoy your 2 minute cook noddles
+        
+        </p>
+       </div>
+
+       <label for="check1" style="color: blue; text-decoration: underline;">Read More...</label>
+    </div>
+            <!-- page 14 -->
+     <div class="container14">
+        <input type="checkbox" id="check2">
+        <img src="frenchfries.webp" alt="frenchfries" style="width: 160px; height: 200px; margin-left: 15px; margin-top: 15px;">
+        <br>
+        <h6>12 March, 2025</h6>
+        <p>Potato lover must try this. To make homemade french fries, peel and soak your potatoes in cold water, then slice them into fries, dry thoroughly, and deep-fry until golden brown and crispy. 
+            Here's a more detailed recipe:</p>
+       
+       <div class="content2">
+       <p>Ingredients:
+        Potatoes (Russets or similar work well)
+        Oil (peanut oil, vegetable oil, or lard, high smoke point oil)
+        Salt
+        Cold water </p>
+       </div>
+
+       <label for="check2" style="color: blue; text-decoration: underline;">Read More...</label>
+     </div>
+
+     <!-- page 15 -->
+     <div class="container15">
+        <input type="checkbox" id="check3">
+        <img src="venpongal.jpg" alt="venpongal" style="width: 160px; height: 200px; margin-left: 15px; margin-top: 15px;">
+        <br>
+        <h6>12 March, 2025</h6>
+        <p>Ven pongal is commonly served for breakfast or lunch, and is especially popular during the Pongal festival in Tamil Nadu. Ven pongal is the savory, wonderful counterpart of Sakkarai Pongal. To know more read below.. </p>
+       
+       <div class="content3">
+       <p>The key ingredients are: 
+        Ghee: A flavorful ghee is essential.
+        Curry leaves: Fresh curry leaves.
+        Black pepper: Slightly crush the peppercorns.
+        Ginger
+        Asafoetida (hing): Also known as hing.
+        Cumin seeds: The whole seeds release flavor when tempered.
+        Other ingredients: 
+        Turmeric
+        Cashews
+        Salt</p>
+       </div>
+
+       <label for="check3" style="color: blue; text-decoration: underline;">Read More...</label>
+     </div>
+
+</div>
+<br>
+
+
+     <!-- page 16 -->
+      <div class="common">
+    <div class="page16">
+        <div class="pg16" style="margin-left: 25px;">
+        <h2 style="position: relative; top: 15px;">JOIN OUR</h2>
+        <h2>NEWSLETTER</h2>
+        <p>To know more, visit us often...</p>
+        </div>
+        <br>
+        <div class="pg16box" style="float: right; margin-right: 35px; position: relative; bottom: 60px;">
+        <input type="text" placeholder="Enter Your Mail">
+        <button type="submit" style="background-color: white; padding:3px;">Subscribe</button>
+        </div>
+    </div>
+
+    <!-- page 17 -->
+     <div class="page17">
+        <div class="div1">
+         <h2>Munch Restaurant</h2>
+         <p>Thank you for choosing MUNCH RESTAURANT! We hope you had a wonderful time and enjoyed your meal. We appreciate your support. Thank you for dining with us!, We appreciate your visit!, We look forward to seeing you again!.</p>
+       
+
+            
+           <img src="fb.png" alt=""  style="width:20px; height:20px;">
+           <img src="twitter.png" alt=""  style="width:20px; height:20px;">
+           <img src="blog.png" alt=""  style="width:20px; height:20px;">
+           <img src="in.png" alt=""  style="width:20px; height:20px;">
+              
+            </div>
+
+            <div class="div2">
+                <h4>Open Hours</h4>
+            <ul>
+                <li>Mondays--------------Closed</li>
+                <li>Tue-Fri--------------7 am - 11 pm </li>
+                <li>Sat-Sun--------------7 am - 10 pm</li>
+                <li>Public Holidays------2 pm - 4 pm</li>
+            </ul>
+         </div>
+
+            <div class="div3">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li class="tel">&#9743; +98745 57689</li>
+                    <li><address>&#10153; 194/47, State Bank Colony,<br>
+                        VIP Garden, Coimbatore North <br> Tamil Nadu. </address></li>
+                   <li><mail>&#9993; munchrestaurant@gmail.com</mail></li>
+                </ul>
+            </div>
+
+            <div class="div4">
+                <h4>Instagram</h4>
+                <div class="inst1">
+                <img src="pasta.avif" alt="">
+                <img src="meals.webp" alt="">
+                <img src="mapotofu.jpg" alt="">
+                </div>
+                
+                <div class="inst2">
+                <img src="friedchicken.avif" alt="">
+                <img src="duck.webp" alt="">
+                <img src="chinesesoup.jpg" alt="">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
